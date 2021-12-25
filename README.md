@@ -7,6 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## How to run this project 
+## install Composer
+-[install composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04-es).
+sudo apt update
+sudo apt install php-cli unzip
+sudo apt install phpunit
+
+## download composer 
+cd ~
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+HASH=`curl -sS https://composer.github.io/installer.sig`
+echo $HASH
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+## start laravel server 
+-[laravel dock](https://laravel.com/docs/8.x/installation).
+php artisan serve
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
