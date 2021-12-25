@@ -21,10 +21,18 @@
 - $ echo $HASH
 - $ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 
+## Node - npm
+- $ sudo apt install nodejs
+- $ node -v 
+- $ sudo apt install npm
+- $ npm -v
+
 ## Start this laravel project 
  [laravel installation](https://laravel.com/docs/8.x/installation).
 - $ git clone git@github.com:JairAlmazanM/auth-example.git  
 - $ cd auth-example
+- $ npm install
+- $ npm run dev
 - $ php artisan serve
 
 ## About Laravel
