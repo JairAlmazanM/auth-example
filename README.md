@@ -8,22 +8,22 @@
 </p>
 
 ## How to run this project 
-## install Composer
--[install composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04-es).
-sudo apt update
-sudo apt install php-cli unzip
-sudo apt install phpunit
+## Install Composer
+ [install composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04-es).
+- $ sudo apt update
+- $ sudo apt install php-cli unzip
+- $ sudo apt install phpunit
 
-## download composer 
-cd ~
-curl -sS https://getcomposer.org/installer -o composer-setup.php
-HASH=`curl -sS https://composer.github.io/installer.sig`
-echo $HASH
-php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+## Download Composer 
+- $ cd ~
+- $ curl -sS https://getcomposer.org/installer -o composer-setup.php
+- $ HASH=`curl -sS https://composer.github.io/installer.sig`
+- $ echo $HASH
+- $ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 
-## start laravel server 
--[laravel dock](https://laravel.com/docs/8.x/installation).
-php artisan serve
+## Start laravel server 
+ [laravel installation](https://laravel.com/docs/8.x/installation).
+- $ php artisan serve
 
 ## About Laravel
 
