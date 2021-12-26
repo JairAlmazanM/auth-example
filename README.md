@@ -8,7 +8,7 @@
 </p>
 
 ## How to run this project 
-auth project using laravel 8 ui, front end is boostrap you can use this proyect as example :bowtie:
+auth project using laravel 8 boostrap ui you can use this proyect as an example :bowtie:
 - $ git clone git@github.com:JairAlmazanM/auth-example.git  
 
 # Install Composer [optional]
