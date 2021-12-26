@@ -45,14 +45,14 @@ you can used .env.example
 
 Add your config </br>
 </br>
-'''
+
 DB_CONNECTION=pgsql </br>
 DB_HOST=db-url </br>
 DB_PORT=5432 </br>
 DB_DATABASE=db-name </br>
 DB_USERNAME=your_user </br>
 DB_PASSWORD=your_pwd </br>
-'''
+
 # Start this Laravel project 
  [laravel installation](https://laravel.com/docs/8.x/installation).
 - $ cd auth-example
