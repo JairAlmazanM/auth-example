@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +13,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    Log::channel('stderr')->debug('hello terminal!');
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

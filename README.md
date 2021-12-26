@@ -8,7 +8,10 @@
 </p>
 
 ## How to run this project 
-## Install Composer
+auth project using laravel 8 boostrap ui you can use this proyect as an example :bowtie:
+- $ git clone git@github.com:JairAlmazanM/auth-example.git  
+
+# Install Composer [optional]
  [install composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04-es).
 - $ sudo apt update
 - $ sudo apt install php-cli unzip
@@ -21,8 +24,43 @@
 - $ echo $HASH
 - $ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 
-## Start laravel server 
+# Node - npm
+- $ sudo apt install nodejs
+- $ node -v 
+- $ sudo apt install npm
+- $ npm -v
+
+# DB postgresql config
+[install postgresql ubuntu](https://gist.github.com/ankurk91/240c355b988eb3d682d3e35f13ecb14b)
+- $ sudo apt-get install php-pgsql
+
+## Add extension to your php.ini file
+extension=php_pgsql.dll (windows) </br>
+extension=php_pgsql.so (linux) </br>
+<br>
+
+create Edit .env file
+you can used .env.example
+- $ cp .env.example .env </br> 
+
+Add your config </br>
+</br>
+'''
+DB_CONNECTION=pgsql </br>
+DB_HOST=db-url </br>
+DB_PORT=5432 </br>
+DB_DATABASE=db-name </br>
+DB_USERNAME=your_user </br>
+DB_PASSWORD=your_pwd </br>
+'''
+# Start this Laravel project 
  [laravel installation](https://laravel.com/docs/8.x/installation).
+- $ cd auth-example
+- $ npm install
+- $ npm run dev
+- $ php artisan migrate:install
+- $ php artisan migrate
+- $ npm run dev
 - $ php artisan serve
 
 ## About Laravel
