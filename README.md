@@ -8,7 +8,7 @@
 </p>
 
 ## How to run this project 
-## Install Composer
+# Install Composer
  [install composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04-es).
 - $ sudo apt update
 - $ sudo apt install php-cli unzip
@@ -27,7 +27,14 @@
 - $ sudo apt install npm
 - $ npm -v
 
-## Start this laravel project 
+## DB postgresql
+- $ sudo apt-get install php-pgsql
+
+## Add extension to your php.ini file
+extension=php_pgsql.dll (windows) </br>
+extension=php_pgsql.so (linux) </br>
+
+## Start this larvael project 
  [laravel installation](https://laravel.com/docs/8.x/installation).
 - $ git clone git@github.com:JairAlmazanM/auth-example.git  
 - $ cd auth-example
